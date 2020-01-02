@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Document</title>
+   <style>
+      .menu {
+         position: fixed;
+         background-color: darkgray;
+         top: 0;
+         text-align: center;
+         width: 100%;
+         height: auto;
+      }
+      .menu li {display: inline-block; padding: 5px;}
+      .menu li a {color:black;}
+      div {
+         height: 100vh;
+         text-align: center;
+         font-size: 30px;
+         letter-spacing: 24px;
+         color: #fff;
+      }
+      .header {background-color: blue;}
+      .main {background-color: blueviolet;}
+      .section-one {background-color: chartreuse;}
+      .section-two {background-color: chocolate;}
+      .section-three {background-color: crimson;}
+   </style>
+</head>
+<body>
+   <section class="menu">
+      <ul>
+         <li><a href="#header">header</a></li>
+         <li><a href="#main">main</a></li>
+         <li><a href="#section-one">section-one</a></li>
+         <li><a href="#section-two">section-two</a></li>
+         <li><a href="#section-three">section-three</a></li>
+         <li><a href="#">None</a></li>
+      </ul>
+   </section>
+   <div class="header" id="header">header</div>
+   <div class="main" id="main">main</div>
+   <div class="section-one" id="section-one">section-one</div>
+   <div class="section-two" id="section-two">section-two</div>
+   <div class="section-three" id="section-three">section-three</div>
+
+   <!-- <script src="./src/modules/scroll.js"></script> -->
+   <script src="./dist/main.js"></script>
+</body>
+</html>

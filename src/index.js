@@ -1,7 +1,7 @@
 'use strict';
 
-import scroll from './modules/scroll';
+import accordion from './modules/accordion';
 
 addEventListener('DOMContentLoaded', function() {
-   scroll();
+   accordion();
 });

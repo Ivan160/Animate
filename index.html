@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
-   <style>
-      .menu {
-         position: fixed;
-         background-color: darkgray;
-         top: 0;
-         text-align: center;
-         width: 100%;
-         height: auto;
-      }
-      .menu li {display: inline-block; padding: 5px;}
-      .menu li a {color:black;}
-      div {
-         height: 100vh;
-         text-align: center;
-         font-size: 30px;
-         letter-spacing: 24px;
-         color: #fff;
-      }
-      .header {background-color: blue;}
-      .main {background-color: blueviolet;}
-      .section-one {background-color: chartreuse;}
-      .section-two {background-color: chocolate;}
-      .section-three {background-color: crimson;}
-   </style>
 </head>
+
 <body>
-   <section class="menu">
-      <ul>
-         <li><a href="#header">header</a></li>
-         <li><a href="#main">main</a></li>
-         <li><a href="#section-one">section-one</a></li>
-         <li><a href="#section-two">section-two</a></li>
-         <li><a href="#section-three">section-three</a></li>
-         <li><a href="#">None</a></li>
-      </ul>
-   </section>
-   <div class="header" id="header">header</div>
-   <div class="main" id="main">main</div>
-   <div class="section-one" id="section-one">section-one</div>
-   <div class="section-two" id="section-two">section-two</div>
-   <div class="section-three" id="section-three">section-three</div>
+
+   <h2>Часто задаваемые вопросы</h2>
+   <div class="accordion-group">
+      <div>
+         <div>
+            <h4 data-accordion-link="one">
+               <a>
+                  Существует ли вероятность того, что подводящий трубопровод замерзнет?
+               </a>
+            </h4>
+         </div>
+         <div data-accordion-elem="one">
+            <div>
+               Вероятность того, что вода в подводящем трубопроводе замерзнет, отсутствует, потому что она
+               находится в трубе лишь на протяжении небольшого промежутка времени, а все остальное время
+               труба
+               пуста. При прокладке трубопровода, предназначенного для хоз. бытового стока, необходимо при
+               монтаже соблюдать правильный уклон трассы. Для трубы диаметром 110 мм перепад должен
+               составлять
+               20 мм на 1 метр, для трубы диаметром 160 мм перепад должен составлять 8 мм на 1 метр.
+            </div>
+         </div>
+      </div>
+      <div>
+         <div>
+            <h4 data-accordion-link="two">
+               <a>
+                  Помогают ли предлагаемые вами устройства достичь в загородном доме комфорта городского
+                  уровня?
+               </a>
+            </h4>
+         </div>
+         <div data-accordion-elem="two">
+            <div>
+               Нет, не может. Армированное изделие и марка бетона М-350, позволяют выдерживать значительные
+               нагрузки, включая землетрясение до 5,5 баллов.
+            </div>
+         </div>
+      </div>
+      <div>
+         <div>
+            <h4 data-accordion-link="three">
+               <a>
+                  Погибают ли бактерии в холодный период при долгом простое системы?
+               </a>
+            </h4>
+         </div>
+         <div data-accordion-elem="three">
+            <div>
+               Да. Иногда зимний монтаж предпочтительней. Большегрузная техника по мороженому грунту не
+               продавит и не испортит дорогу или ландшафт участка, да и грунтовая вода отходит. Весной
+               грунт
+               даст усадку и уплотнится, и вам останется сделать лишь ландшафтное планирование.
+            </div>
+         </div>
+      </div>
+   </div>
 
    <!-- <script src="./src/modules/scroll.js"></script> -->
    <script src="./dist/main.js"></script>
 </body>
+
 </html>

@@ -1,6 +1,8 @@
 function animate(data) {
    var duration = data.duration;
+   if (!duration) duration = 400;
    var timing = data.timing;
+   if (!timing) timing = function (timeFraction) {return timeFraction;};
    var draw = data.draw;
    var start = performance.now();
    requestAnimationFrame(function animate(time) {

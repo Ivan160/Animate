@@ -17,7 +17,7 @@ addEventListener('DOMContentLoaded', function() {
 
 ## Options
 ###Default options
-Vertical options toggle
+Vertical Sliding toggle
 ```js
 sliding(item);
 ```

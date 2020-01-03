@@ -36,9 +36,10 @@ sliding(item, {action: 'slidingDown'});
 ### Action: 
 <code>slidingDown</code> - Display the matched elements with a sliding motion. </br>
 <code>slidingUp</code> - Hide the matched elements with a sliding motion. </br>
-<code>slidingToggle</code> -  </br>
+<code>slidingToggle</code> - *default options* Display or Hide the matched elements with a sliding motion </br>
 
-
-<code>slidingLeft</code> -   </br>
-<code>slidingRight</code> -   </br>
-<code>slidingToggleHorizon</code> -   </br>
+### SlidingPlus.js
+additional a sliding motion horizontally
+<code>slidingLeft</code> - Display the matched elements with a sliding motion horizontally.  </br>
+<code>slidingRight</code> - Hide the matched elements with a sliding motion horizontally.  </br>
+<code>slidingToggleHorizon</code> - Display or Hide the matched elements with a sliding motion horizontally  </br>

@@ -24,12 +24,14 @@ sliding(item);
 ```
 
 ### Pass additional options in Object
-<code>animationTime</code> - duration of the animation (*default options* = 250)
+<code>animationTime</code> - duration of the animation </br> 
+*default options = 250*
 ```js
 sliding(item, {animationTime: 300});
 ```
 
-<code>action</code> - the action that the animation will perform
+<code>action</code> - the action that the animation will perform </br> 
+*default options = slidingToggle*
 ```js
 sliding(item, {action: 'slidingDown'});
 ```

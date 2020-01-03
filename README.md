@@ -35,10 +35,10 @@ sliding(item, {action: 'slidingDown'});
 ```
 ### Action: 
 <code>slidingDown</code> - Display the matched elements with a sliding motion. </br>
-<code>slidingUp</code> - Hide the matched elements with a sliding motion.
-<code>slidingToggle</code> - 
+<code>slidingUp</code> - Hide the matched elements with a sliding motion. </br>
+<code>slidingToggle</code> -  </br>
 
 
-<code>slidingLeft</code> - 
-<code>slidingRight</code> - 
-<code>slidingToggleHorizon</code> - 
+<code>slidingLeft</code> -   </br>
+<code>slidingRight</code> -   </br>
+<code>slidingToggleHorizon</code> -   </br>

@@ -40,6 +40,8 @@ sliding(item, {action: 'slidingDown'});
 
 ### SlidingPlus.js
 additional a sliding motion horizontally
+
+
 <code>slidingLeft</code> - Display the matched elements with a sliding motion horizontally.  </br>
 <code>slidingRight</code> - Hide the matched elements with a sliding motion horizontally.  </br>
 <code>slidingToggleHorizon</code> - Display or Hide the matched elements with a sliding motion horizontally  </br>

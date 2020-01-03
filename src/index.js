@@ -1,7 +1,10 @@
 'use strict';
-
-import accordion from './modules/accordion';
+import sliding from './modules/sliding';
 
 addEventListener('DOMContentLoaded', function() {
-   accordion();
+   var clubsList = document.querySelector('.clubs-list');
+   clubsList.addEventListener('click', function(){
+      var item = this.querySelector('ul');
+      sliding(item, {animationTime: 300, action: 'slidingDown'});
+   });
 });

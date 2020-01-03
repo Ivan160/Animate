@@ -6,65 +6,34 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
+   <style>
+      .clubs-list {
+         position: relative;
+      }
+
+      .clubs-list ul {
+         display: none;
+         width: 180px;
+         position: absolute;
+         top: 60px;
+         left: 0;
+         z-index: 100;
+         background-color: #381b35;
+         padding: 15px;
+         border: 1px solid #ffd11a;
+         border-radius: 10px;
+         text-align: center;
+      }
+   </style>
 </head>
 
 <body>
-
-   <h2>Часто задаваемые вопросы</h2>
-   <div class="accordion-group">
-      <div>
-         <div>
-            <h4 data-accordion-link="one">
-               <a>
-                  Существует ли вероятность того, что подводящий трубопровод замерзнет?
-               </a>
-            </h4>
-         </div>
-         <div data-accordion-elem="one">
-            <div>
-               Вероятность того, что вода в подводящем трубопроводе замерзнет, отсутствует, потому что она
-               находится в трубе лишь на протяжении небольшого промежутка времени, а все остальное время
-               труба
-               пуста. При прокладке трубопровода, предназначенного для хоз. бытового стока, необходимо при
-               монтаже соблюдать правильный уклон трассы. Для трубы диаметром 110 мм перепад должен
-               составлять
-               20 мм на 1 метр, для трубы диаметром 160 мм перепад должен составлять 8 мм на 1 метр.
-            </div>
-         </div>
-      </div>
-      <div>
-         <div>
-            <h4 data-accordion-link="two">
-               <a>
-                  Помогают ли предлагаемые вами устройства достичь в загородном доме комфорта городского
-                  уровня?
-               </a>
-            </h4>
-         </div>
-         <div data-accordion-elem="two">
-            <div>
-               Нет, не может. Армированное изделие и марка бетона М-350, позволяют выдерживать значительные
-               нагрузки, включая землетрясение до 5,5 баллов.
-            </div>
-         </div>
-      </div>
-      <div>
-         <div>
-            <h4 data-accordion-link="three">
-               <a>
-                  Погибают ли бактерии в холодный период при долгом простое системы?
-               </a>
-            </h4>
-         </div>
-         <div data-accordion-elem="three">
-            <div>
-               Да. Иногда зимний монтаж предпочтительней. Большегрузная техника по мороженому грунту не
-               продавит и не испортит дорогу или ландшафт участка, да и грунтовая вода отходит. Весной
-               грунт
-               даст усадку и уплотнится, и вам останется сделать лишь ландшафтное планирование.
-            </div>
-         </div>
-      </div>
+   <div class="clubs-list">
+      <p>Выбрать клуб</p>
+      <ul>
+         <li><a href="./mozaika.html">Тело мозаика</a></li>
+         <li><a href="./schelkovo.html">Тело щелково</a></li>
+      </ul>
    </div>
 
    <!-- <script src="./src/modules/scroll.js"></script> -->

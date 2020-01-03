@@ -22,8 +22,8 @@ Vertical Sliding toggle
 sliding(item);
 ```
 
-Pass add options in Object
-animationTime
+Pass additional options in Object
+<code>animationTime</code>
 ```js
 sliding(item, {animationTime: 300});
 ```

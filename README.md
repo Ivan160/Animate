@@ -3,14 +3,14 @@ With these functions, you can show and hide selected elements on the page, by sm
 
 Сall Sliding and pass item and if necessary options
 ```js
-import sliding from './sliding';
+import {slidingDown, slidingUp, slidingToggle} from './sliding';
 
 addEventListener('DOMContentLoaded', function() {
    var clubsList = document.querySelector('.clubs-list');
    clubsList.addEventListener('click', function(){
       var item = this.querySelector('ul');
       
-      sliding(item, {animationTime: 300, action: 'slidingDown'});
+      slidingToggle(item, 300);
       
    });
 });
@@ -27,13 +27,13 @@ sliding(item);
 <code>animationTime</code> - duration of the animation </br> 
 *default options = 250*
 ```js
-sliding(item, {animationTime: 300});
+slidingToggle(item, 300);
 ```
 
 <code>action</code> - the action that the animation will perform </br> 
 *default options = slidingToggle*
 ```js
-sliding(item, {action: 'slidingDown'});
+slidingToggle(item, 300});
 ```
 ### Action: 
 <code>slidingDown</code> - Display the matched elements with a sliding motion. </br>

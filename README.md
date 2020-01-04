@@ -40,7 +40,21 @@ slidingToggle(item, 300});
 <code>slidingUp</code> - Hide the matched elements with a sliding motion. </br>
 <code>slidingToggle</code> - *default options* Display or Hide the matched elements with a sliding motion </br>
 
-### SlidingPlus.js
+### SlidingHorizon
+```js
+import {slidingLeft, slidingRight, slidingToggleHorizon} from './slidingHorizon';
+
+addEventListener('DOMContentLoaded', function() {
+   var clubsList = document.querySelector('.clubs-list');
+   clubsList.addEventListener('click', function(){
+      var item = this.querySelector('ul');
+      
+      slidingToggleHorizon(item, 300);
+      
+   });
+});
+```
+
 additional a sliding motion horizontally
 
 

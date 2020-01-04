@@ -1,7 +1,7 @@
 # Fading
 
 ```js
-  import {fadingIn, fadingOut} from './fading';
+  import {fadingIn, fadingOut, fadingToggle} from './fading';
 ```
 
 ## fadingIn
@@ -20,3 +20,13 @@ Hide the matched elements by fading them to transparent.
     //or
   fadingOut(item, 300);
 ```
+
+
+## fadingToggle
+Display or hide the matched elements by animating their opacity.
+```js
+  fadingToggle(item); 
+    //or
+  fadingToggle(item, 300);
+```
+

@@ -1,4 +1,4 @@
-import {fadingIn, fadingOut} from './fading';
+import {fadingIn, fadingOut, fadingToggle} from './fading';
 
 var popupShow = function () {
    function popupСlose(popup) {

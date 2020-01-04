@@ -27,4 +27,12 @@ var fadingOut = function (item, animationTime) {
    }, +animationTime + 100);
 };
 
-export {fadingIn, fadingOut};
+var fadingToggle = function (item, animationTime) {
+   if (getComputedStyle(item).display === 'none' || getComputedStyle(item).opacity === '0') {
+      fadingIn(item, animationTime);
+   } else {
+      fadingOut(item, animationTime);
+   }
+};
+
+export {fadingIn, fadingOut, fadingToggle};

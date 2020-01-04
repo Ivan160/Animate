@@ -11,7 +11,6 @@ Display the matched elements by fading them to opaque.
     //or
   fadingIn(item, 300);
 ```
-<code>fadingIn(item); /*or*/ fadingIn(item, 300);</code>
 
 
 ## fadingOut

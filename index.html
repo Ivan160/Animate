@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
    <meta charset="UTF-8">
@@ -7,36 +7,91 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <title>Document</title>
    <style>
-      .clubs-list {
-         position: relative;
+      .popup {
+         display: none;
       }
 
-      .clubs-list ul {
-         display: none;
-         width: 180px;
-         position: absolute;
-         top: 60px;
+      .popup .overlay {
+         background-color: rgba(0, 0, 0, .7);
+         position: fixed;
+         top: 0;
          left: 0;
-         z-index: 100;
-         background-color: #381b35;
-         padding: 15px;
-         border: 1px solid #ffd11a;
-         border-radius: 10px;
+         width: 100vw;
+         height: 100vh;
+         z-index: 1020;
+      }
+
+      .popup .form-wrapper {
+         text-align: center;
+         margin: 0 auto;
+         position: fixed;
+         left: 0;
+         top: 20vh;
+         right: 0;
+         z-index: 1200;
+         width: 380px;
+         height: 355px;
+      }
+
+      .popup .form-wrapper .close-form {
+         position: relative;
+         height: 20px;
+         width: 100%;
+      }
+
+      .popup .form-content {
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         text-align: center;
+         z-index: 1210;
+         width: 340px;
+         height: 315px;
+         background-color: #1e1c34;
+         margin: 0 auto;
          text-align: center;
       }
    </style>
 </head>
 
 <body>
-   <div class="clubs-list">
-      <p>Выбрать клуб</p>
-      <ul>
-         <li><a href="./mozaika.html">Тело мозаика</a></li>
-         <li><a href="./schelkovo.html">Тело щелково</a></li>
-      </ul>
+   <div class="free-visit" style="z-index: 99;">
+      <img src="images/head-icon.png" alt="">
+      <p>
+         <a href="#" class="open-popup" data-popup="#free_visit_form">Записаться на <br>бесплатный
+            визит
+         </a>
+      </p>
    </div>
 
-   <!-- <script src="./src/modules/scroll.js"></script> -->
+
+   <div class="popup" id="free_visit_form">
+      <div class="overlay"></div>
+      <div class="form-wrapper">
+         <div class="close-form">
+            <img src="images/close-icon.png" alt="close" class="close_icon">
+         </div>
+         <div class="form-content">
+            <form name="callback-form" id="form1" action="#" method="post">
+               <h4>Обратный звонок</h4>
+               <input type="hidden" name="form_name" value=" Обратный звонок">
+               <!--  <input type="hidden" name="club" value="<?=$_GET['club-name']?>"> -->
+               <p class="input-text"><input name="name" type="text" required placeholder="Ваше имя..."></p>
+               <p class="input-text"><input type="tel" name="phone" id="callback_form1-phone" required
+                     placeholder="Ваш номер телефона..."></p>
+               <p class="personal-data">
+                  <input type="checkbox" required id="check"><label for="check">Я согласен на обработку
+                     <br>персональных
+                     данных</label>
+
+               </p>
+               <button name="send1" class="btn btn-send" type="submit">Перезвоните мне</button>
+            </form>
+
+         </div>
+      </div>
+   </div>
    <script src="./dist/main.js"></script>
 </body>
 

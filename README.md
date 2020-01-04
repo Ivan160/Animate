@@ -16,6 +16,7 @@ addEventListener('DOMContentLoaded', function() {
 ```
 
 ## sliding.js
+Sliding motion vertically.
 
 ### Pass additional options in Object
 <code>animationTime</code> - duration of the animation </br> 
@@ -34,6 +35,8 @@ slidingToggle(item, 300});
 <code>slidingToggle</code> - *default options* Display or Hide the matched elements with a sliding motion </br>
 
 ## slidingHorizon.js
+Sliding motion horizontally.
+
 ```js
 import {slidingLeft, slidingRight, slidingToggleHorizon} from './slidingHorizon';
 
@@ -47,10 +50,6 @@ addEventListener('DOMContentLoaded', function() {
    });
 });
 ```
-
-additional a sliding motion horizontally
-
-
 <code>slidingLeft</code> - Display the matched elements with a sliding motion horizontally.  </br>
 <code>slidingRight</code> - Hide the matched elements with a sliding motion horizontally.  </br>
 <code>slidingToggleHorizon</code> - Display or Hide the matched elements with a sliding motion horizontally  </br>

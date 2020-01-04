@@ -1,7 +1,6 @@
 # Sliding
 With these functions, you can show and hide selected elements on the page, by smoothly expanding and collapsing.
 
-Сall Sliding and pass item and if necessary options
 ```js
 import {slidingDown, slidingUp, slidingToggle} from './sliding';
 
@@ -16,12 +15,7 @@ addEventListener('DOMContentLoaded', function() {
 });
 ```
 
-## Options
-### Default options
-Vertical Sliding toggle
-```js
-sliding(item);
-```
+## sliding.js
 
 ### Pass additional options in Object
 <code>animationTime</code> - duration of the animation </br> 
@@ -35,12 +29,11 @@ slidingToggle(item, 300);
 ```js
 slidingToggle(item, 300});
 ```
-### Action: 
 <code>slidingDown</code> - Display the matched elements with a sliding motion. </br>
 <code>slidingUp</code> - Hide the matched elements with a sliding motion. </br>
 <code>slidingToggle</code> - *default options* Display or Hide the matched elements with a sliding motion </br>
 
-### SlidingHorizon
+## slidingHorizon.js
 ```js
 import {slidingLeft, slidingRight, slidingToggleHorizon} from './slidingHorizon';
 

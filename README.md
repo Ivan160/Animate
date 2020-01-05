@@ -7,8 +7,8 @@ import {slidingDown, slidingUp, slidingToggle} from './sliding';
 import {slidingLeft, slidingRight, slidingToggleHorizon} from './slidingHorizon';
 
 addEventListener('DOMContentLoaded', function() {
-   var clubsList = document.querySelector('.clubs-list');
-   clubsList.addEventListener('click', function(){
+   var itemList = document.querySelector('.item-list');
+   itemList.addEventListener('click', function(){
       var item = this.querySelector('ul');
       
       slidingToggle(item, 300);

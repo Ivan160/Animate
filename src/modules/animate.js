@@ -1,20 +1,25 @@
-function animate(data) {
-   var duration = data.duration;
-   if (!duration) duration = 400;
-   var timing = data.timing;
-   if (!timing) timing = function (timeFraction) {return timeFraction;};
-   var draw = data.draw;
-   var start = performance.now();
-   requestAnimationFrame(function animate(time) {
-      var timeFraction = (time - start) / duration;
-      if (timeFraction > 1) {
-         timeFraction = 1;
-      }
-      var progress = timing(timeFraction);
-      draw(progress);
-      if (timeFraction < 1) {
-         requestAnimationFrame(animate);
-      }
-   });
-}
-export default animate;
+export const animate = ({
+  duration = 500,
+  timing = (timeFraction) => (timeFraction < 0 ? 0 : timeFraction),
+  draw,
+}) => {
+  let ref = null;
+  const start = performance.now();
+
+  const animateFrame = (time) => {
+    let timeFraction = (time - start) / duration;
+    if (timeFraction > 1) timeFraction = 1;
+
+    const progress = timing(timeFraction);
+
+    draw(progress);
+
+    if (timeFraction < 1) {
+      ref = requestAnimationFrame(animateFrame);
+    } else {
+      cancelAnimationFrame(ref);
+    }
+  };
+
+  ref = requestAnimationFrame(animateFrame);
+};
